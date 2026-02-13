@@ -1,0 +1,17 @@
+import random
+random_number=random.randint(1,10)
+number=int(input("guess a number:"))
+guess=0
+guess_history=[]
+
+while number < random_number:
+    print("number is less than try again")
+    number=int(input("type another number:"))
+    guess_history.append(number)
+while number > random_number:
+    print("number is greater than try again")
+    number=int(input("type another number"))
+    guess_history.append(number)
+if random_number==number:
+    print(guess_history)
+    print("good job")
