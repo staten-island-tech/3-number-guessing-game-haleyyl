@@ -5,13 +5,13 @@ guess=0
 guess_history=[]
 
 while number < random_number:
-    print("number is less than try again")
+    print("the number is greater than that number you guessed try again")
     number=int(input("type another number:"))
     guess_history.append(number)
 while number > random_number:
-    print("number is greater than try again")
+    print("the number is less than that number you guessed try again")
     number=int(input("type another number"))
     guess_history.append(number)
 if random_number==number:
-    print(guess_history)
     print("good job")
+    print(guess_history)
